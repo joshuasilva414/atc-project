@@ -1,0 +1,12 @@
+[project]
+name = "atc-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bluesky-gym>=0.1.0",
+]
+
+[tool.uv]
+override-dependencies = ["torch==2.6", "numpy>1.24.0"]
