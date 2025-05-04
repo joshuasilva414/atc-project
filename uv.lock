@@ -14,10 +14,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "bluesky-gym" },
+    { name = "stable-baselines3" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "bluesky-gym", specifier = ">=0.1.0" }]
+requires-dist = [
+    { name = "bluesky-gym", specifier = ">=0.1.0" },
+    { name = "stable-baselines3", specifier = ">=2.2.1" },
+]
 
 [[package]]
 name = "bluesky-gym"

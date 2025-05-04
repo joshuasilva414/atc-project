@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bluesky-gym>=0.1.0",
+    "stable-baselines3>=2.2.1",
 ]
 
 [tool.uv]
