@@ -4,6 +4,8 @@ import gymnasium as gym
 import bluesky_gym
 from utils import plot_learning_curve
 
+bluesky_gym.register_envs()
+
 if __name__ == '__main__':
     env = gym.make('MergeEnv-v0')
     agent = Agent(input_dims=env.observation_space.shape, env=env,

@@ -3,10 +3,10 @@ import torch as T
 import torch.nn.functional as F
 import numpy as np
 from buffer import ReplayBuffer
-from networks import ActorNetwork, CriticNetwork, ValueNetwork
+from sac import ActorNetwork, CriticNetwork, ValueNetwork
 
 class Agent():
-    def __init__(self, alpha=0.0003, beta=0.0003, input_dims=[8],
+    def __init__(self, alpha=0.0003, beta=0.0003, input_dims=(8,),
             env=None, gamma=0.99, n_actions=2, max_size=1000000, tau=0.005,
             layer1_size=256, layer2_size=256, batch_size=256, reward_scale=2):
         self.gamma = gamma
