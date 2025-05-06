@@ -17,10 +17,10 @@ while not (done or truncated):
     action = model(obs)
     obs_, reward_, done, truncated, info = env.step(action)
     save_video(
-        frames=env.render()
+        frames=env.render(),
         video_folder="vids",
-        fps=30
-        step_starting_index=0
+        fps=30,
+        step_starting_index=0,
         episode_index=1
     )
     obs = obs_
